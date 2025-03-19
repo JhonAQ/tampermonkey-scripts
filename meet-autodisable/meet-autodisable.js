@@ -31,4 +31,5 @@
     }
   },500);
   console.log("Hello from github pages :)");
+  console.log("Hello from github pages x2 D:");
 })();
