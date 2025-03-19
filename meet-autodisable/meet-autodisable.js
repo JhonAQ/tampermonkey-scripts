@@ -1,31 +1,33 @@
 // ==UserScript==
 // @name         Meet autodisable
 // @namespace    JhonatanArias
-// @version      2025-03-19
+// @version      1.1
 // @description  Entra a reuniones de meet con el microfono y camara desactivados
 // @author       JhonatanArias
 // @match        https://meet.google.com/*
+// @updateURL    https://raw.githubusercontent.com/JhonatanDczel/tampermonkey-scripts/refs/heads/main/meet-autodisable/meet-autodisable.js
+// @downloadURL    https://raw.githubusercontent.com/JhonatanDczel/tampermonkey-scripts/refs/heads/main/meet-autodisable/meet-autodisable.js
 // @grant        none
 // ==/UserScript==
 
 (function() {
-    'use strict';
-    let micro = null;
-    let camera = null;
-    let interval = setInterval(()=>{
-        micro = document.querySelector('[aria-label="Turn off microphone"]');
-        camera = document.querySelector('[aria-label="Turn off camera"]');
-        if(micro && camera){
-            console.log("Encontrados micro y camara");
-            if(!micro.dataset.disable){
-                micro.click();
-                console.log("Microfono deshabilitado");
-            }
-            if(!camera.dataset.disable){
-                camera.click();
-                console.log("Camara deshabilitada");
-            }
-            clearInterval(interval);
-        }
-    },500);
+  'use strict';
+  let micro = null;
+  let camera = null;
+  let interval = setInterval(()=>{
+    micro = document.querySelector('[aria-label="Turn off microphone"]');
+    camera = document.querySelector('[aria-label="Turn off camera"]');
+    if(micro && camera){
+      console.log("Encontrados micro y camara");
+      if(!micro.dataset.disable){
+        micro.click();
+        console.log("Microfono deshabilitado");
+      }
+      if(!camera.dataset.disable){
+        camera.click();
+        console.log("Camara deshabilitada");
+      }
+      clearInterval(interval);
+    }
+  },500);
 })();
