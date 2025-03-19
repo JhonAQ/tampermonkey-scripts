@@ -5,8 +5,8 @@
 // @description  Entra a reuniones de meet con el microfono y camara desactivados
 // @author       JhonatanArias
 // @match        https://meet.google.com/*
-// @updateURL    https://raw.githubusercontent.com/JhonatanDczel/tampermonkey-scripts/refs/heads/main/meet-autodisable/meet-autodisable.js
-// @downloadURL    https://raw.githubusercontent.com/JhonatanDczel/tampermonkey-scripts/refs/heads/main/meet-autodisable/meet-autodisable.js
+// @updateURL    https://jhonatandczel.github.io/tampermonkey-scripts/meet-autodisable/meet-autodisable.js
+// @downloadURL  https://jhonatandczel.github.io/tampermonkey-scripts/meet-autodisable/meet-autodisable.js
 // @grant        none
 // ==/UserScript==
 
