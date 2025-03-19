@@ -30,4 +30,5 @@
       clearInterval(interval);
     }
   },500);
+  console.log("Hello from github pages :)");
 })();
